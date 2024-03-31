@@ -24,7 +24,15 @@
  *}
 <a class="banner" href="{$banner_link}" title="{$banner_desc}">
   {if isset($banner_img)}
-    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid" loading="lazy" width="1110" height="213">
+    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid" loading="lazy" width="100%" height="auto">
+  {else}
+    <span>{$banner_desc}</span>
+  {/if}
+</a>
+
+<a class="banner_mobile" href="{$banner_link}" title="{$banner_desc}">
+  {if isset($banner_img_mobile)}
+    <img src="{$banner_img_mobile}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid" loading="lazy" width="100%" height="auto">
   {else}
     <span>{$banner_desc}</span>
   {/if}

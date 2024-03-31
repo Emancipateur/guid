@@ -36,7 +36,7 @@ class Ps_Banner extends Module implements WidgetInterface
      */
     const PS_16_EQUIVALENT_MODULE = 'blockbanner';
 
-    private $templateFile;
+    public $templateFile;
 
     public function __construct()
     {

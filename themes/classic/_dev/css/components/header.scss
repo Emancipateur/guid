@@ -163,6 +163,9 @@
 
     .position-static {
       position: static;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     a[data-depth="0"] {
@@ -179,7 +182,17 @@
     margin-left: $medium-space;
   }
 
+  .banner_mobile{
+    display: none;
+  }
+
   @include media-breakpoint-down(sm) {
+  .banner{
+     display: none;
+    }
+  .banner_mobile{
+    display: block;
+  }
     .top-logo {
       display: flex;
       align-items: center;

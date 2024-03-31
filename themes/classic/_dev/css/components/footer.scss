@@ -1,6 +1,4 @@
-#footer {
-  padding-top: 2.5rem;
-}
+
 
 #blockEmailSubscription_displayFooterBefore {
   float: inherit;
@@ -192,13 +190,19 @@
 }
 
 .footer-container {
+  background: linear-gradient(0deg, rgba(70,41,123,1) 0%, rgba(31,9,56,1) 100%);
   padding-top: $extra-large-space;
   overflow: hidden;
 
   .h3,
   .h4 {
+    color : $white;
     margin-bottom: 1rem;
     font-size: 1rem;
+      }
+
+      #block_myaccount_infos .myaccount-title a, .block-contact{
+    color : $white;
   }
 
   li {
@@ -207,7 +211,7 @@
 
   li a {
     font-size: $font-size-sm;
-    color: $gray;
+    color: $white;
     cursor: pointer;
 
     &:hover {

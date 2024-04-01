@@ -22,13 +22,19 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-
 {block name='block_social'}
-  <div class="block-social col-lg-4 col-md-12 col-sm-12">
-    <ul>
+  <div class="block-social-container">
+  <div class="block-social col-lg-6 col-md-12 col-sm-12">
+  <h3>Suivez-moi</h3>
+    <ul class="social-ul">
       {foreach from=$social_links item='social_link'}
-        <li class="{$social_link.class}"><a href="{$social_link.url}" target="_blank" rel="noopener noreferrer">{$social_link.label}</a></li>
+        <li>
+        <a href="{$social_link.url}" target="_blank" rel="noopener noreferrer">
+        <img  class="social-png" src="{$urls.img_ps_url}{$social_link.class}.png" alt="{$social_link.label}">
+        </a>
+        </li>
       {/foreach}
     </ul>
+  </div>
   </div>
 {/block}

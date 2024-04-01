@@ -2,6 +2,14 @@
 
 class Ps_bannerOverride extends Ps_Banner
 {
+
+        public function install()
+    {
+        return parent::install() &&
+            $this->registerHook('displayHome') &&
+            $this->registerHook('actionObjectLanguageAddAfter') &&
+            $this->installFixtures();
+    }
     public function renderForm()
     {
         $fields_form = [

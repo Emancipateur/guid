@@ -24,6 +24,7 @@
 *}
 
 {block name='social_sharing'}
+  
   {if isset($social_share_links) && $social_share_links|is_array}
     <div class="social-sharing">
       <ul>

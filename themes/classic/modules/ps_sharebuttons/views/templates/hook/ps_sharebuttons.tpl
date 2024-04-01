@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-{block name='social_sharing'}
+{* {block name='social_sharing'}
   {if $social_share_links}
     <div class="social-sharing">
       <span>{l s='Share' d='Shop.Theme.Actions'}</span>
@@ -35,3 +35,4 @@
     </div>
   {/if}
 {/block}
+ *}

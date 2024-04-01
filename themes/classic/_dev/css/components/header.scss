@@ -6,7 +6,7 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.11);
 
   .logo {
-    max-width: 100%;
+    max-width: 80px;
     height: auto;
   }
 
@@ -144,9 +144,10 @@
       }
     }
   }
+  
 
   .header-top {
-    padding: 1.25rem 0;
+    padding: 0.5rem 0;
 
     > .container {
       position: relative;
@@ -182,17 +183,23 @@
     margin-left: $medium-space;
   }
 
-  .banner_mobile{
+  .banner_mobile {
     display: none;
   }
 
   @include media-breakpoint-down(sm) {
-  .banner{
-     display: none;
+    .header-top {
+      padding: 0;
     }
-  .banner_mobile{
-    display: block;
-  }
+    #search_widget{
+      display: none;
+    }
+    .banner {
+      display: none;
+    }
+    .banner_mobile {
+      display: block;
+    }
     .top-logo {
       display: flex;
       align-items: center;
